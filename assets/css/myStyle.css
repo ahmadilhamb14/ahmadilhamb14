@@ -1,0 +1,513 @@
+* {
+  font-family: 'Consolas';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.active {
+  display: block !important;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ===== NAVBAR ====== */
+nav {
+  /* background-color: grey; */
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding: 0 5rem;
+  border-bottom: solid 2px;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 3;
+}
+nav ul {
+  margin-left: auto;
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 2rem;
+}
+nav .computer li a:hover {
+  font-weight: bold;
+  /* font-size: 110%; */
+  background-color: aqua;
+  height: 4rem;
+}
+nav .menu {
+  display: none;
+}
+.content h2 {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+/* ===== CONTENT ===== */
+.body {
+  padding: 0 5rem;
+}
+.container {
+  padding-top: 5rem;
+  min-height: 100%;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title h1 {
+  text-align: center;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.title h1::before {
+  content: '';
+  position: absolute;
+  height: 1rem;
+  width: 14rem;
+  background-color: aqua;
+  text-align: center;
+  z-index: -1;
+  margin-top: 1rem;
+}
+.container .bottom {
+  margin-top: 4rem;
+}
+.container hr {
+  border: none;
+  border-bottom: solid 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .garisPanjang {
+  width: 60%;
+}
+.container .garisPendek {
+  width: 40%;
+}
+.row {
+  display: flex;
+  /* justify-content: space-around; */
+  /* margin-bottom: 2rem; */
+  padding-bottom: 1rem;
+  /* background-color: purple; */
+}
+.kiri,
+.kanan {
+  width: 50%;
+}
+
+/* ===== HOME ===== */
+#home {
+  /* background-color: blue; */
+}
+#home .content {
+  display: flex;
+  align-items: center;
+  /* background-color: pink; */
+}
+#home .content img {
+  width: 15rem;
+  border-radius: 10rem;
+  margin-top: 3rem;
+}
+#home .content h4 {
+  margin-top: 1rem;
+}
+#home .kiri {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  /* background-color: pink; */
+}
+#home .kanan {
+  width: 50%;
+  /* background-color: yellow; */
+}
+#home .description b {
+  font-size: 2rem;
+}
+#home .description p {
+  padding-right: 5rem;
+  line-height: 1.5rem;
+}
+#home .description .project {
+  padding: 0.5rem 1rem;
+  border: solid 2px;
+  font-weight: bold;
+  /* margin-top: 4rem; */
+  transition: all 0.3s ease 0s;
+}
+
+#home .description .project:hover {
+  background-color: aquamarine;
+}
+
+/* ===== PROJECT ====== */
+#project {
+  /* animation: ease-in; */
+  transition: ease-in;
+}
+#project .title h1 {
+  margin-bottom: 4rem;
+}
+#project .row {
+  overflow: scroll;
+  margin-bottom: 2rem;
+}
+#project .card {
+  border: solid 2px;
+  width: 25vw;
+  height: 15rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.4);
+  /* padding-left: 3rem; */
+}
+#project .card:hover {
+  background-color: aquamarine;
+
+  /* margin-bottom: 3rem; */
+}
+#project .card:hover #project .card .row .col a {
+  font-weight: bold !important;
+  color: white;
+}
+#project .col {
+  margin-left: 3rem;
+}
+#project .card img {
+  width: 24.7vw;
+  margin-bottom: 0px;
+  /* height: 13.8vw; */
+}
+
+#project a {
+  padding: 0;
+  display: block;
+}
+#project .card .category {
+  background-color: black;
+  text-align: center;
+  color: white;
+  position: absolute;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  /* margin-top: 1rem; */
+}
+#project .card a {
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: aqua; */
+  font-weight: bold;
+  font-size: 1rem;
+  /* margin-top: 1rem; */
+  /* background-color: red; */
+  text-align: center;
+  width: 100%;
+}
+#project a .more {
+  margin-top: 1rem;
+}
+.col {
+  position: relative;
+  /* cursor: pointer; */
+  /* margin-left: 3rem; */
+}
+.card2 {
+  display: none;
+  /* opacity: 0.3; */
+  position: static;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgb(80, 73, 73); */
+  top: 50%;
+  left: 50%;
+  /* z-index: 1; */
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  /* -ms-transform: translate(-50%, -50%); */
+}
+.pelapis {
+  height: 100%;
+  width: 24.7vw;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.card2 span {
+  background-color: red;
+  padding: 0.5rem;
+  color: white;
+  position: absolute;
+  z-index: 4;
+  opacity: 1;
+}
+#bawah-tengah:hover .card2 {
+  opacity: 1;
+  display: flex;
+  position: absolute;
+  animation: fadeAnimation 0.5s;
+}
+
+#bawah-tengah:hover .card2 span {
+  position: absolute;
+  opacity: 1;
+  /* z-index: 5; */
+  background-color: blue;
+}
+
+/* ===== ABOUT ===== */
+#about .title h1 {
+  margin-bottom: 3rem;
+}
+#about .kiri p {
+  text-align: justify;
+  /* background-color: blue; */
+  margin-left: 0;
+}
+#about .kanan {
+  padding-left: 2rem;
+  /* background-color: white; */
+  padding-top: 0;
+}
+
+#about ol {
+  padding-left: 2rem;
+  /* margin-left: 1rem; */
+}
+#about .about-coding {
+  width: 100%;
+}
+#about .organisasi {
+  background-color: black;
+  display: flex;
+  height: inherit;
+  /* justify-content: center; */
+}
+#about .about-organisasi {
+  width: 50%;
+  /* height: 20rem; */
+  /* position: absolutedffd; */
+  margin-left: auto;
+  margin-right: auto;
+  /* width: fit-content; */
+}
+
+/* ===== CONTACT ====== */
+#contact {
+  margin-bottom: 2rem;
+}
+#contact .title {
+  margin-bottom: 2rem;
+}
+#contact .socialMedia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#contact .socialMedia i {
+  /* margin-top: rem; */
+  /* background-color: red; */
+  /* text-align: center !important; */
+  display: flex;
+  justify-content: center;
+  /* animation-name: animation; */
+  /* animation-duration: 2s; */
+}
+#contact .row {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  /* background-color: salmon; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  border-top: 2px solid;
+}
+
+@keyframes animation {
+  form {
+    margin-bottom: 0px;
+  }
+  to {
+    margin-bottom: 3rem;
+  }
+}
+@keyframes fadeAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* =========== RESPONSIVE HP ============ */
+@media screen and (max-width: 450px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* width: 414px; */
+  }
+  body {
+    /* width: 414px; */
+    overflow-x: hidden;
+  }
+  .body {
+    padding: 0 0.2rem;
+  }
+  nav .menu {
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  nav .menu .dropdown {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 4rem;
+    background-color: rgb(201, 201, 201);
+  }
+  nav .dropdown li {
+    margin-bottom: 1rem;
+    display: block;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav li a {
+    color: white;
+    text-align: center;
+    /* background-color: red; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav li a:hover {
+    background-color: none !important;
+  }
+  .nav-besar {
+    padding: 0 2rem;
+  }
+  .nav-besar ul {
+    display: none;
+  }
+  .container {
+    /* max-width: 450px; */
+  }
+  #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: salmon; */
+    padding: 5rem 2rem;
+  }
+  #home .content p {
+    margin: 0;
+    /* overflow: hidden; */
+    /* padding: 0 5rem; */
+  }
+  #home .content .kiri {
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    /* flex-direction: col; */
+    height: fit-content;
+  }
+  #home .kiri img {
+    margin-top: 0;
+  }
+  #home .content .kanan {
+    width: 100%;
+    text-align: justify;
+    padding-right: 0;
+  }
+  #home .kanan p {
+    padding-right: 0;
+  }
+  #home .title h1 {
+    margin: 0;
+  }
+  #home h4 {
+    text-align: center;
+  }
+
+  #project {
+    padding: 0 2rem;
+  }
+  #project .card {
+    width: 70vw;
+    height: 100%;
+    /* background-color: red; */
+    padding-bottom: 1rem;
+  }
+  #project .card img {
+    width: 100%;
+  }
+
+  #about {
+    padding: 2rem 2rem;
+  }
+  #about .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #about .col {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  #about .organisasi {
+    width: 100%;
+  }
+  #about .about-organisasi {
+    width: 100%;
+  }
+
+  #contact {
+    padding: 2rem 2rem 0;
+  }
+  #contact .title {
+    margin-bottom: 0;
+  }
+  #contact .socialMedia {
+    width: 100%;
+    /* background-color: salmon; */
+    margin-bottom: 1rem;
+  }
+  #contact .row {
+    display: flex;
+    flex-direction: column;
+  }
+  #contact .bottom {
+    margin-top: 1rem;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  /* .container {
+    padding: 0.5rem 0;
+    margin-top: 5rem;
+  } */
+}
